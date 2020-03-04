@@ -27,5 +27,25 @@ Its not very likely that we can get all these qualities in one single platform &
 - We may also end up writing our own platform, if we don't find a good minial one.
 
 ## Components
-Any IoT platform would have following components:
-- 
+Any IoT platform would have following components / capabilities:
+- Ability to Stream Data from constrainted device
+- Message Broker for Asynchronous Communication
+- Processors to process the strea in a Reactive Way
+- Ability to build visualizations / dashboards
+- Ability to plug-in Machine Learning component
+
+## Problem Statements
+Following are "candidates". Feel free to add more. We will need a range from "trivial" to "real world"
+- Scraping data from the web
+- PotHole Detection. 
+  - Detect road conditions using mobile sensors, pictures
+  - Feed it the processors & optionally a Machine Learning Model
+  - Visualize it on Maps for Navigation
+- [TODO] add more
+
+
+## IoT Framework
+Candidates:
+- Node Red (https://nodered.org/)
+- OpenIoT (http://www.openiot.eu/)
+- ThingsBoard (https://thingsboard.io/)
