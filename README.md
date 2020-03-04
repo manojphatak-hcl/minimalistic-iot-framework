@@ -49,3 +49,9 @@ Candidates:
 - Node Red (https://nodered.org/)
 - OpenIoT (http://www.openiot.eu/)
 - ThingsBoard (https://thingsboard.io/)
+
+## License
+This project is licensed under MIT License
+
+## Disclaimer
+- This is not an official HCL ERS product.
