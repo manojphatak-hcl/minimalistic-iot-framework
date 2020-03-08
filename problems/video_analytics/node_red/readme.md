@@ -20,3 +20,14 @@ node -v
 # npm installs automatically 
 npm -v
 ```
+
+## Install node-red and custom nodes
+```
+npm install -g --unsafe-perm node-red
+```
+
+```
+npm install -g node-red-contrib-pythonshell
+npm install -g  node-red-contrib-python-function
+npm install -g node-red-node-openweathermap
+```
