@@ -2,7 +2,7 @@
 
 ## Run Docker Container
 ```
-sudo docker run -it --rm  -v <path-to-data-folder>:/home manojphatak/video_analytics_sandbox:v1 /bin/bash
+sudo docker run -it --rm -p 1880:1880  -v <path-to-data-folder>:/home manojphatak/video_analytics_sandbox:v2 /bin/bash
 ```
 
 ## Install Node inside container
