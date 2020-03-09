@@ -1,3 +1,14 @@
+## Purpose
+This project would:
+1. Listen to some video stream...
+2. Process / Filter the frames
+3. Run some analytics (to start with, it would just recognize faces against known ones)
+4. Output results
+
+We would try implementing this over multiple IoT platforms to see how these platforms score.
+Parameters for comparison are mentioned in the "readme" file at root
+
+
 ## Pull Docker Image & Run Container
 ```
 sudo docker run -it --rm -p 1880:1880  -v <path-to-data-folder>:/home manojphatak/video_analytics_sandbox:v2 /bin/bash
