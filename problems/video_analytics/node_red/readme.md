@@ -3,17 +3,30 @@
 sudo docker run -it --rm -p 1880:1880  -v <path-to-data-folder>:/home manojphatak/video_analytics_sandbox:v2 /bin/bash
 ```
 
+## Make sure your "data" folder on host has following structure
+This is not part of the repository
+```
+data
+ |-- movie.webm   (Its a file for video stream. For now, its required to have name "movie.webm"
+ |-- ref_images   (this is a folder, that contains any number of ".jpg" images for known-faces
+```
+
+## Copy python script (in this repository) that is used by the node in node-red
+```
+sudo docker cp <host-path>/video_analytics.py <container-id>:/home
+```
+
 ## Start Node-Red Server inside the container
 ```
 $> node-red
 ```
 
-Node-Red should be accessible at:
+## Node-Red should be accessible at:
 ```
 http://localhost:1880
 ```
 
-Configure Flow at Node-Red using the Python Node & the Python Script
+## Configure Flow at Node-Red using the Python Node & the Python Script
 This can be done by "Import"ing following JSON Flow description into Node-Red
 ```json
 [{
